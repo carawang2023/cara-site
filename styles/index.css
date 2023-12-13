@@ -1,0 +1,307 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css?family=Trirong&effect=fire');
+body {
+    background-color: beige;
+}
+
+h1, h2, h3, h4{
+    font-family: 'Trirong', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1.font-effect-fire{
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing:2mm;
+}
+
+header {
+    position: fixed;
+    /*height: 6rem;*/
+    width: 100%;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+header nav li a {
+    background-color: blueviolet;
+    border: 1px solid black;
+    color: white;
+    display: inline-block;
+    padding: 2mm;
+    text-align: center;
+}
+
+header nav li a:hover {
+    background-color: aquamarine;
+    color: rgb(53, 12, 92);
+}
+
+/* every section */
+#about {
+    height: 80%;
+    padding: 50px;
+    background-color: #e485df;
+    color: black;
+    position: relative;
+    margin-top: 180px;
+}
+
+#hobby {
+    height: 80%;
+    padding: 50px;
+    background-color: #bfdba3;
+    color: black;
+    position: relative;
+    margin-top: 80px;
+}
+
+#nail {
+    width: 95%;
+    padding:25px 50px;
+    background-color: #acc593;
+    color: black;
+    position: relative;
+    margin: 10px;
+}
+#nail-text {
+    margin-top: 40px;
+    animation: slideInFromTop 1s ease-in;
+}
+
+img {
+    border: 2px solid rgb(255, 255, 255);
+}
+
+#english
+{
+    width: 95%;
+    padding:25px 50px;
+    background-color: #acc593;
+    color: black;
+    position: relative;
+    margin: 10px;
+}
+
+/* table */
+table {
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #D6EEEE;
+}
+
+#contact {
+    height: 80%;
+    padding: 50px;
+    background-color: #c39099;
+    color: black;
+    position: relative;
+    margin-top: 80px;
+}
+
+.why
+{
+    width: 95%;
+    padding:25px 50px;
+    background-color: #d6b5bb;
+    color: black;
+    position: relative;
+    margin: 10px;
+}
+
+.how
+{
+    width: 95%;
+    padding:25px 50px;
+    background-color: #d6b5bb;
+    color: black;
+    position: relative;
+    margin: 10px;
+}
+
+.when
+{
+    width: 95%;
+    padding:25px 50px;
+    background-color: #d6b5bb;
+    color: black;
+    position: relative;
+    margin: 10px;
+}
+
+#js {
+    height: 80%;
+    padding: 50px;
+    background-color: #9d90c3;
+    color: black;
+    position: relative;
+    margin-top: 80px;
+}
+
+
+#btn-alert {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f296ed;
+}
+
+#btn-counter {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f296ed;
+}
+
+.even {
+    color: blue;
+}
+
+.odd {
+    color: red;
+}
+
+/* footer */
+footer {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "middle middle"
+        "footer footer";
+}
+
+footer nav.main {
+    grid-area: header;
+}
+
+footer small {
+    grid-area: footer;
+}
+
+footer ul.social {
+    grid-area: header / 2;
+}
+
+@media (min-width: 100px) and (max-width: 1000px){
+    body{
+        background-color: rgb(70, 46, 138);
+    }
+
+    h1, h2, h3, h4{
+        text-align: center;
+    }
+
+    footer a {
+        color: #000;
+    }
+
+    #about {
+        border-radius: 2%;
+        height: 80%;
+        padding: 10px;
+        background-color: #e485df;
+        color: black;
+        position: relative;
+        margin-top: 120px;
+    }
+
+    #hobby {
+        border-radius: 2%;
+        height: 80%;
+        padding: 10px;
+        background-color: #bfdba3;
+        color: black;
+        position: relative;
+        margin-top: 40px;
+        /*margin: 40px 5% 0 5%;*/
+    }
+
+    #nail {
+        border-radius: 2%;
+        width: 95%;
+        padding: 10px;
+        background-color: #acc593;
+        color: black;
+        position: relative;
+        margin-top: 10px;
+    }
+
+    #english {
+        border-radius: 2%;
+        width: 95%;
+        padding: 10px;
+        background-color: #acc593;
+        color: black;
+        position: relative;
+        margin-top: 10px;
+    }
+
+    #contact {
+        border-radius: 2%;
+        height: 80%;
+        padding: 10px;
+        background-color: #c39099;
+        color: black;
+        position: relative;
+        margin-top: 40px;
+    }
+
+    #js {
+        border-radius: 2%;
+        height: 80%;
+        padding: 10px;
+        background-color: #9d90c3;
+        color: black;
+        position: relative;
+        margin-top: 40px;
+    }
+
+    .why {
+        border-radius: 2%;
+        width: 95%;
+        padding: 10px;
+        background-color: #d6b5bb;
+        color: black;
+        position: relative;
+        margin-top: 10px;
+    }
+
+    .how {
+        border-radius: 2%;
+        width: 95%;
+        padding: 10px;
+        background-color: #d6b5bb;
+        color: black;
+        position: relative;
+        margin-top: 10px;
+    }
+    
+    .when {
+        border-radius: 2%;
+        width: 95%;
+        padding: 10px;
+        background-color: #d6b5bb;
+        color: black;
+        position: relative;
+        margin-top: 10px;
+    }
+    
+    h1.font-effect-fire {
+        font-size: 16px;
+        font-weight: 200;
+        letter-spacing: 1mm;
+    }
+
+    figure {
+        margin: 0;
+    }
+}

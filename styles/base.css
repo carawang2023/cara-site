@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css?family=Sofia&effect=fire");
+/*
+primary: #ff6600;
+secondary: #c0ffee;
+*/
+
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.4rem;
+}
+
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Sofia", sans-serif;
+    font-size: 30px;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}
+
+/*
+header nav ul {
+    padding-left: 0px;
+}
+
+header nav li {
+    display: inline;
+}
+*/
+
+header nav li a {
+    background-color: blue;
+    border: 2px solid white;
+    color: white;
+    display: inline-block;
+    padding: 1em;
+    text-decoration: none;
+}
+
+header nav li a:hover {
+    background-color: aquamarine;
+}
+
+img {
+    border: 10px inset purple;
+    float: left;
+    margin-right: 1.5em;
+}
+
+section#about img:first-of-type + img {
+    border-color: green;
+}
+
+aside {
+    background-color: beige;
+    border: 2px dotted brown;
+    float: right;
+    padding: 1em;
+    margin-left: 1em;
+    border-radius: 10px;
+}
+
+section#about > p:first-of-type::first-letter {
+    background-color: red;
+    border: 1px solid #ff0000;
+    color: white;
+    font-size: 3em;
+    font-style: italic;
+    padding: 5px 10px;
+}
+
+footer {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "middle middle"
+        "footer footer";
+}
+
+footer nav.main {
+    grid-area: header;
+}
+
+footer small {
+    grid-area: footer;
+}
+
+footer img {
+    grid-area: footer / 2;
+}
+
+footer ul.social {
+    grid-area: header / 2;
+}
